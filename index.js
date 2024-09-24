@@ -89,7 +89,7 @@ const all_button_Action = (e) => {
     section_donations.innerHTML = all_history;
   } else {
     section_donations.innerHTML = All_isp;
-    donatBTN = document.querySelectorAll(".DonatSubmition");
+    location.reload()
   }
 };
 

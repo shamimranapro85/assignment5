@@ -114,7 +114,7 @@ const calculation = (e) => {
     alert("please enter your amount");
   } else if (0 >= inputValue) {
     alert("Please enter a valid number");
-  } else if (inputValue >= mainBalance) {
+  } else if (inputValue > mainBalance) {
     alert("insufficient balance");
   } else {
     price.innerHTML = Number(price.innerHTML) + Number(inputValue);

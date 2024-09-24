@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
+    <nav class="sticky top-0 z-10 backdrop-blur">
+      <div class="bg-yellow-100 bg-opacity-30">
+        <div class="container p-2 flex justify-between items-cneter py-3 mx-auto">
+          <a class="preventDefalutdd" href="./index.html"
+            ><button class="btn bg-green-500 border-0 text-white">
+              Home
+            </button></a
+          >
+
+          <div
+            class="hidden md:flex gap-2 text-black font-bold flex justify-center items-center"
+          >
+            <img src="./assets/logo.png" class="w-8" alt="logo not found" />
+            <span>Donation Bangladesh</span>
+          </div>
+          <div class="gap-2 balance flex items-center text-black">
+            <img src="./assets/coin.png" alt="$" />
+            <h3>50000</h3>
+            <p>BDT</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto">
+      <div class="py-10 flex relative">
+        <h1 class="text-5xl font-bold">Important FAQ</h1>
+        <img
+          src="./assets/icegif-1153.gif"
+          class="w-12 absolute left-[350px] top-6 transform scale-x-[-1]"
+          alt=""
+        />
+      </div>
+
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium capitalize">
+            what is the document object model (dom )?
+          </div>
+          <div class="collapse-content">
+            <p class="capitalize">
+              The Document Object Model (DOM) is a programming interface for web
+              documents. It represents the structure of HTML or XML as a tree of
+              objects, allowing developers to manipulate the content, structure,
+              and styling of a webpage dynamically using JavaScript. Each
+              element, attribute, and text becomes accessible for changes.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium capitalize">
+            How do you select an element from the Dom?
+          </div>
+          <div class="collapse-content">
+            <p class="capitalize">
+              we can select a DOM element using methods like getElementById,
+              querySelector, or getElementsByClassName in JavaScript.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium capitalize">
+            what is event delegation is the context of the dom , and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p class="capitalize">
+              Event delegation allows you to handle events at a parent element
+              instead of individual child elements. It improves efficiency by
+              reducing the need for multiple event listeners, especially in
+              dynamic content.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium capitalize">
+            how do you manipulate an element's attributes and styles using the
+            dom?
+          </div>
+          <div class="collapse-content">
+            <p class="capitalize">
+              We can manipulate an element's attributes with methods like
+              setAttribute() and removeAttribute(). For styles, use
+              element.style.property to modify inline CSS directly, e.g.,
+              element.style.color = "blue";.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

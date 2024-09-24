@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body class="bg-white">
+    <nav class="sticky top-0 backdrop-blur">
+      <div class="bg-yellow-100 bg-opacity-30 ">
+        <div class="container flex justify-between items-cneter py-3 mx-auto">
+          <a class="preventDefalutdd" href="./blog.html"
+            ><button class="btn bg-green-500 border-0 text-white">
+              Bolgs
+            </button></a
+          >
+
+          <div
+            class="hidden md:flex gap-2 text-black font-bold flex justify-center items-center"
+          >
+            <img src="./assets/logo.png" class="w-8" alt="logo not found" />
+            <span>Donation Bangladesh</span>
+          </div>
+          <div class="gap-2 balance flex items-center text-black">
+            <img src="./assets/coin.png" alt="$" />
+            <h3>50000</h3>
+            <p>BDT</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-2 justify-center p-3">
+        <button class="navBTN btn btn-sm btn-success">Donation</button>
+        <button class="navBTN btn btn-sm">History</button>
+      </div>
+    </nav>
+
+    <section class="container donations mx-auto">
+      
+
+    <section class="history container hidden mx-auto">
+      
+    </section>
+
+
+
+    <!-- =======modal ============= -->
+    <dialog id="messageModal" class="modal ">
+      <div class="modal-box w-9/12 max-w-5xl flex justify-center items-center flex-col ">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <h1 class="font-bold text-5xl">Congrates!</h1>
+        <img src="./assets/coin.png" class="w-12" alt="">
+        </div>
+        <p class="font-bold">You Have Donated for Humankind</p>
+        <h3 class="font-bold text-xl">Successfully</h3>
+        <div class="modal-action ">
+          <form method="dialog">
+            <!-- if there is a button, it will close the modal -->
+            <button class="btn border-0">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- =======modal ============= -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
